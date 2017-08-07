@@ -1,0 +1,13 @@
+{
+  "ltshops": {
+    "config.dataBase": {
+      "typeDatabase": "mongodb",
+      "ip": "localhost",
+      "port": 27017,
+      "nombreBaseDatos": "ltshops"
+    },
+    "configuracionAplicacion": {
+      "puerto": 3000
+    },
+  }
+}
