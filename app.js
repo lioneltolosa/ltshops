@@ -6,6 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var hbs = require('express-handlebars');
 var routes = require('./routes/index');
+<<<<<<< HEAD
+var formidable = require('formidable');
+=======
+>>>>>>> master
 
 require('./app_api/models/bbdd');
 
@@ -26,6 +30,42 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
+<<<<<<< HEAD
+
+
+var http = require('http');
+var formidable = require('formidable');
+var fs = require('fs');
+
+
+// Upload
+app.get('/', function (req, res){
+	res.sendFile(__dirname + '/index.html');
+});
+
+var start = 'documentacion/publico/'
+
+app.post('/upload', function (req, res){
+	var form = new formidable.IncomingForm();
+	form.parse(req, function (err, fields, files) {
+
+    var oldpath = files.upload.path;
+    var newpath = './uploads' + files.upload.name;
+		console.log(fields);
+		fs.rename(oldpath, newpath, function (err) {
+			console.log(files);
+			if (err) throw err;
+			return res.redirect('/');
+			//res.send('File uploaded and moved!');
+			res.end();
+		});
+	});
+});
+//Fin Upload
+
+
+=======
+>>>>>>> master
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
