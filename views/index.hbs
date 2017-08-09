@@ -1,12 +1,56 @@
+<<<<<<< HEAD
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+  crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+  crossorigin="anonymous"></script>
+=======
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+>>>>>>> master
 
 
 
 
 <div class="collapse bg-inverse" id="navbarHeader">
+<<<<<<< HEAD
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 py-4">
+        <h4 class="text-white">About</h4>
+        <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences
+          long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact
+          information.</p>
+      </div>
+      <div class="col-sm-4 py-4">
+        <h4 class="text-white">Contact</h4>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Follow on Twitter</a></li>
+          <li><a href="#" class="text-white">Like on Facebook</a></li>
+          <li><a href="#" class="text-white">Email me</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navbar navbar-inverse bg-inverse">
+  <div class="container d-flex justify-content-between">
+    <a href="#" class="navbar-brand">Album</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+      aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+  </div>
+</div>
+
+
+<h1 class="text-center">Music Store</h1>
+=======
      <div class="container">
        <div class="row">
          <div class="col-sm-8 py-4">
@@ -35,10 +79,53 @@
 
 
 <h1 class="text-center">Book Store</h1>
+>>>>>>> master
 
 </main>
 <div class="main-content">
   <section class="insert">
+<<<<<<< HEAD
+    <h3>Insert Album</h3>
+
+    <form action="/insert" method="post">
+
+      <div class="input">
+        <label for="Artista">Artista</label>
+        <input type="text" id="Artista" name="Artista">
+      </div>
+      <div class="input">
+        <label for="Album">Album</label>
+        <input type="text" id="Album" name="Album">
+      </div>
+      <div class="input">
+        <label for="Sello_Discografico">Sello Discografico</label>
+        <input type="text" id="Sello_Discografico" name="Sello_Discografico">
+      </div>
+      <div class="input">
+        <label for="Genero">Genero</label>
+        <input type="text" id="Genero" name="Genero">
+      </div>
+      <div class="input">
+        <label for="Tracks">Tracks</label>
+        <input type="text" id="Tracks" name="Tracks">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-info">Insert</button>
+      <button type="submit" class="btn btn-info">Upload Photo</button>
+    </form>
+  </section>
+
+
+
+  <p>Subir Archivo</p>
+  <form action="/upload" enctype="multipart/form-data" method="post">
+    <input id="file" type="file" name="upload" multiple="multiple" />
+    <button id="submit" type="submit" class="btn btn-secondary" name="/" value="Upload">Upload</button>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+  </form>
+
+</div>
+=======
     <h3>Insert Book</h3>
 
     <form action="/insert" method="post">
@@ -60,3 +147,4 @@
 </section>
 </div>
 
+>>>>>>> master

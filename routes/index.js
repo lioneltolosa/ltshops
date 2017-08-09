@@ -12,9 +12,17 @@ var Schema = mongoose.Schema;
 
 // Esquema
 var userDataSchema = new Schema({
+<<<<<<< HEAD
+  Artista: {type: String, required: true},
+  Album: String,
+  Sello_Discografico: String,
+  Genero: String,
+  Tracks: String
+=======
   title: {type: String, required: true},
   category: String,
   authorship: String,
+>>>>>>> master
 },
 { versionKey: false},
 {collection: 'ltshops'});
@@ -32,9 +40,17 @@ router.get('/', function(req, res, next) {
 // insertar
 router.post('/insert', function(req, res, next) {
   var item = {
+<<<<<<< HEAD
+    Artista: req.body.Artista,
+    Album: req.body.Album,
+    Sello_Discografico: req.body.Sello_Discografico,
+    Genero: req.body.Genero,
+    Tracks: req.body.Tracks
+=======
     title: req.body.title,
     category: req.body.category,
     authorship: req.body.authorship
+>>>>>>> master
   };
 
   var data = new UserData(item);
