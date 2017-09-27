@@ -6,10 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var hbs = require('express-handlebars');
 var routes = require('./routes/index');
-<<<<<<< HEAD
+
 var formidable = require('formidable');
-=======
->>>>>>> master
 
 require('./app_api/models/bbdd');
 
@@ -29,9 +27,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-
-<<<<<<< HEAD
-
 
 var http = require('http');
 var formidable = require('formidable');
@@ -64,9 +59,6 @@ app.post('/upload', function (req, res){
 //Fin Upload
 
 
-=======
->>>>>>> master
-// catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
@@ -83,8 +75,6 @@ if (app.get('env') === 'development') {
   });
 }
 
-// production error handler
-// no stacktraces leaked to user
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error', {
